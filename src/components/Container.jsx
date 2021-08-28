@@ -1,11 +1,14 @@
 import React from 'react'
 import style from './Container.module.css'
+import ConteinerCripto from './ConteinerCripto'
 
-const Container = () => {
+const Container = ({ cripto, call }) => {
+
+
 
     return (
         <div className={style.container}>
-            <span>contenido</span>
+            <ConteinerCripto call={call} cripto={cripto}/>
         </div>
     )
 }
